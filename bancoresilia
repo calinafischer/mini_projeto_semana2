@@ -1,0 +1,66 @@
+#create database Resilia;
+
+CREATE TABLE `Sede Resília` (
+  `id` int,
+  `endereço` varchar(255),
+  `e-mail` varchar(255),
+  `telefone` varchar(255),
+  `qunaridade de funcionários` int,
+  `responsável` varchar (255)
+);
+
+
+CREATE TABLE `alunos` (
+  `id` int,
+  `email` varchar(255),
+  `senha` varchar(255),
+  `telefone` int,
+  `CPF` int,
+  `endereço` varchar (255)
+);
+
+CREATE TABLE `cursos` (
+  `id` int,
+  `carga horária` int,
+  `professores` varchar(255),
+  `hora/aula` int
+);
+
+CREATE TABLE `funcionários` (
+  `id` int,
+  `endereço` varchar(255),
+  `e-mail` varchar(255),
+  `conta bancária` int,
+  `escolaridade` varchar (255)
+);
+
+CREATE TABLE `turmas` (
+  `id` int,
+  `turno` varchar(255),
+  `quantidade de alunos` int,
+  `professor responsável` varchar (255),
+  `duração` int
+);
+
+CREATE TABLE `entregas` (
+  `id` int,
+  `email` varchar(255),
+  `conceito do aluno` varchar(255),
+  `qantidade de alunos` int,
+  `CPF` varchar (255),
+  `endereço` varchar (255)
+);
+
+INSERT INTO alunos
+    (`id`, `email`, `senha`, `telefone`, `CPF`, `endereço`)
+VALUES
+    (1, 'rosinete.ramos@example.com', 'screwyou', '33448787', '12347685009', 'avenida principal'),
+    (2, 'ivanoel.souza@example.com', 'tomato', '32456699', '65784433009', 'travessa 4 de julho'),
+    (3, 'romilda.silveira@example.com', 'batman', '39874422', '84736209564', 'avinida brasil'),
+    (4, 'alcindo.nunes@example.com', 'respect', '34527755', '93847615263', 'rua dos papagaios'),
+    (5, 'arlete.caldeira@example.com', 'jets', '32428200', '93746823745', 'rua 15 de novembro'),
+    (6, 'fausto.viana@example.com', 'real', '35649865', '63546278912', 'rua jacaré'),
+    (7, 'adeci.nogueira@example.com', '1313', '34595577', '23478965487', 'rua barão do rio branco'),
+    (8, 'dalvania.dacosta@example.com', 'ling', '32338453', '36475198332', 'rua da cacatua'),
+    (9, 'evaristo.sales@example.com', 'celine', '32887755', '65789457483', 'rua dos operarios'),
+    (10, 'pedrino.fogaca@example.com', 'puppies', '33995544', '19384756390', 'rua 9 de julho');
